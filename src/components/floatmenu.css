@@ -1,0 +1,62 @@
+:root {
+  --hovering-color: rgb(209, 204, 204);
+}
+
+.nav-li {
+  position: relative;
+  padding-top: 10px;
+  padding-right: 5px;
+}
+
+.nav-li:hover {
+}
+
+.about-floatbox {
+  position: absolute;
+  width: 200px;
+  /*background-color: var(--hovering-color);*/
+  background-image: linear-gradient(
+    to bottom,
+    var(--hovering-color),
+    rgb(97, 97, 97)
+  );
+  left: 0;
+  background-blend-mode: darken;
+  z-index: 2;
+  opacity: 1;
+}
+
+.about-floatbox ul {
+  padding-left: 10px;
+}
+
+.about-floatbox ul li {
+  list-style-type: none;
+  text-align: left;
+}
+
+.about-floatbox ul li:hover {
+  color: aliceblue;
+}
+
+.hover-background {
+  background-color: var(--hovering-color);
+  color: black;
+}
+
+/*Fade In React Style*/
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+}

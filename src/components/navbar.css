@@ -1,0 +1,65 @@
+.nav {
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  font: inherit;
+}
+
+.nav-list {
+  margin-left: 150px;
+  list-style-type: none;
+  display: flex;
+}
+.nav-list * {
+  margin-right: 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+}
+
+.nav-icon {
+  font-size: 25px;
+}
+
+.nav-icon-div {
+  font-size: 30px;
+}
+
+/*Mobile*/
+
+.nav-list-mobile {
+  font-size: 25px;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+.absolute-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  background-color: black;
+  background-image: linear-gradient(to bottom, grey, black);
+  z-index: 5;
+  height: 100%;
+  width: 200px;
+}
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+}

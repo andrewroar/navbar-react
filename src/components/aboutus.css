@@ -1,0 +1,27 @@
+:root {
+  --hovering-color: rgb(209, 204, 204);
+}
+
+.nav-li {
+  position: relative;
+}
+
+.nav-li:hover {
+  border: 1px solid grey;
+}
+
+.about-floatbox {
+  position: absolute;
+  width: 200px;
+  background-color: var(--hovering-color);
+  right: -10px;
+}
+
+.about-floatbox li {
+  list-style-type: none;
+}
+
+.hover-background {
+  background-color: var(--hovering-color);
+  color: black;
+}
