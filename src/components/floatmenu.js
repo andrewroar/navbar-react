@@ -5,26 +5,44 @@ import "./floatmenu.css";
 
 export default function Floatmenu(props, { in: inProp }) {
   const [hover, setHover] = useState(false);
+  const [smallscreen, setSmallscree] = useState(false);
   const handleHover = () => {
     setHover(!hover);
   };
 
-  /*Transition 
-  
+  /*Transition */
 
-  
-  */
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
+      setSmallscree(true);
+    } else {
+      setSmallscree(false);
+    }
+  };
+  useEffect(() => {
+    showButton();
+    window.addEventListener("resize", showButton);
+  }, []);
 
   return (
     <li
-      onMouseEnter={handleHover}
-      onMouseLeave={handleHover}
-      onClick={handleHover}
+      onMouseEnter={smallscreen ? null : handleHover}
+      onMouseLeave={smallscreen ? null : handleHover}
+      onClick={smallscreen ? handleHover : null}
       className={hover ? "nav-li hover-background" : "nav-li"}
     >
       {props.title}
+
       <CSSTransition in={hover} classNames="fade" timeout="200" unmountOnExit>
-        <div className="about-floatbox">{props.children}</div>
+        <div
+          className={
+            smallscreen
+              ? "about-floatbox position-relative"
+              : "about-floatbox position-absolute"
+          }
+        >
+          {props.children}
+        </div>
       </CSSTransition>
     </li>
   );

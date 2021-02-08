@@ -6,13 +6,13 @@
   position: relative;
   padding-top: 10px;
   padding-right: 5px;
+  padding-left: 10px;
 }
 
 .nav-li:hover {
 }
 
 .about-floatbox {
-  position: absolute;
   width: 200px;
   /*background-color: var(--hovering-color);*/
   background-image: linear-gradient(
@@ -23,7 +23,15 @@
   left: 0;
   background-blend-mode: darken;
   z-index: 2;
-  opacity: 1;
+}
+
+.position-absolute {
+  position: absolute;
+}
+.position-relative {
+  position: relative;
+  margin-left: -10px;
+  margin-top: 20px;
 }
 
 .about-floatbox ul {

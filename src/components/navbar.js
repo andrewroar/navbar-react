@@ -58,11 +58,13 @@ export default function Navbar() {
           </CSSTransition>
         </div>
       ) : (
-        <div className="nav-list">
-          <Floatmenu title={"Products"}>
+        <div
+          className={showmobilebutton ? "nav-list mobile-margin" : "nav-list "}
+        >
+          <Floatmenu title={"Products"} smallscreen={showmobilebutton}>
             <Products />
           </Floatmenu>
-          <Floatmenu title={"About Us"}>
+          <Floatmenu title={"About Us"} smallscreen={showmobilebutton}>
             <Aboutus />
           </Floatmenu>
         </div>

@@ -5,9 +5,6 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div className="stop-overlap">
-        <p>Hello World fdgfdsgfsdhgfdhgfdh</p>
-      </div>
     </div>
   );
 }
