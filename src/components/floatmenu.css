@@ -12,14 +12,22 @@
 .nav-li:hover {
 }
 
-.about-floatbox {
-  width: 200px;
-  /*background-color: var(--hovering-color);*/
+.background-colour-grey {
+  background-color: rgb(209, 204, 204);
+}
+
+.background-colour-fade-grey {
   background-image: linear-gradient(
     to bottom,
     var(--hovering-color),
     rgb(97, 97, 97)
   );
+}
+
+.about-floatbox {
+  width: 200px;
+  /*background-color: var(--hovering-color);*/
+
   left: 0;
   background-blend-mode: darken;
   z-index: 2;

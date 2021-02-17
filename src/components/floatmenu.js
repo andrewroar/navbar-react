@@ -38,7 +38,7 @@ export default function Floatmenu(props, { in: inProp }) {
           className={
             smallscreen
               ? "about-floatbox position-relative"
-              : "about-floatbox position-absolute"
+              : "about-floatbox position-absolute background-colour-fade-grey "
           }
         >
           {props.children}
