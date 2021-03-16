@@ -4,9 +4,12 @@
 
 .nav-li {
   position: relative;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-right: 5px;
   padding-left: 10px;
+  height: 70%;
+  
+    
 }
 
 .nav-li:hover {
@@ -26,20 +29,21 @@
 
 .about-floatbox {
   width: 200px;
-  /*background-color: var(--hovering-color);*/
-
   left: 0;
   background-blend-mode: darken;
   z-index: 2;
+  /*top: 80px;*/
 }
 
 .position-absolute {
   position: absolute;
+  top: 50px;
 }
 .position-relative {
   position: relative;
   margin-left: -10px;
   margin-top: 20px;
+  
 }
 
 .about-floatbox ul {
